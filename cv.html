@@ -398,6 +398,61 @@
       </div>
     </div>
 
+    <!-- Hobby Projects -->
+    <div class="section">
+      <div class="section-header">Hobby Projects</div>
+      <div class="section-content">
+
+        <div class="work-entry">
+          <div class="work-company">Self-Hosted Infrastructure</div>
+          <div class="work-period">2024 to Present</div>
+          <p class="content-p">For over two years I've been running my own self-hosted infrastructure — Immich (photo
+            management), Authentik (SSO), Vaultwarden (password manager), Navidrome (music streaming), and my own mail
+            server. It started as curiosity and turned into something I genuinely rely on every day, and so does my
+            family.</p>
+          <p class="content-p">The whole setup runs on declarative infrastructure using NixOS and Docker Compose across
+            multiple nodes. I've implemented a zero-trust network model — nothing is reachable from the public internet,
+            but my family and I can access everything smoothly. Security is baked in throughout: fail2ban on all
+            services, restricted network access, centralized logging and monitoring. Backups follow a 3-2-1 strategy,
+            and I've written documentation for my family so they can keep things running if I'm ever not around to
+            maintain it.</p>
+          <p class="content-p">This project has taught me a lot about infrastructure, networking, and security from the
+            operator side — things I don't always get to touch in my day job. It's also the kind of thing where you feel
+            the weight of real responsibility: if the mail server goes down, people notice.</p>
+          <div class="work-techs">
+            <span class="tech-tag">NixOS</span>
+            <span class="tech-tag">Docker Compose</span>
+            <span class="tech-tag">Zero Trust</span>
+            <span class="tech-tag">Authentik</span>
+            <span class="tech-tag">Fail2ban</span>
+            <span class="tech-tag">Immich</span>
+            <span class="tech-tag">Vaultwarden</span>
+            <span class="tech-tag">Navidrome</span>
+          </div>
+        </div>
+
+        <div class="work-entry">
+          <div class="work-company">ESP32 Bike Navigation</div>
+          <div class="work-period">Ongoing</div>
+          <p class="content-p">I'm building a bike computer using an ESP32 and Rust — something like a simplified
+            Garmin, but completely DIY. It renders maps and handles bike navigation, and I'm still actively adding
+            features to it.</p>
+          <p class="content-p">What makes this project interesting to me is the combination of embedded development with
+            a modern language (Rust), the constraint of running on limited hardware, and using LLMs as a development
+            tool to move faster in a domain I'm still learning. It's a hobby that sits at the intersection of things I
+            enjoy: cycling, building things, and picking up new tech.</p>
+          <div class="work-techs">
+            <span class="tech-tag">Rust</span>
+            <span class="tech-tag">ESP32</span>
+            <span class="tech-tag">Embedded Systems</span>
+            <span class="tech-tag">Map Rendering</span>
+            <span class="tech-tag">IA-Agentic Development</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
     <!-- Education -->
     <div class="section">
       <div class="section-header">Education</div>
@@ -449,6 +504,12 @@
           <span class="contact-label">Github</span>
           <span class="contact-value">
             <a class="content-link" href="https://github.com/pouriaMaleki">Github Account</a>
+          </span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Resume</span>
+          <span class="contact-value">
+            <a class="content-link" href="https://pouria.fiksu.me/">pouria.fiksu.me</a>
           </span>
         </div>
       </div>
