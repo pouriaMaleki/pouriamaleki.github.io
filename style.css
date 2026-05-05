@@ -13,6 +13,7 @@
   --fs-xs: 0.875rem;
   --fs-sm: 1rem;
   --fs-lg: 1.375rem;
+  --fs-md: 1.75rem;
   --fs-xl: 2rem;
   --fs-2xl: 2.5rem;
   --fs-3xl: 3rem;
@@ -116,7 +117,7 @@ main {
 
 .site-title {
   font-family: var(--font-display);
-  font-size: 1.75rem;
+  font-size: var(--fs-md);
   font-weight: var(--fw-bold);
   line-height: var(--lh-tight);
   margin: var(--sp-4) 0 var(--sp-2);
@@ -215,6 +216,21 @@ main {
   text-decoration: underline;
 }
 
+.experience-item a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.experience-item a:hover,
+.experience-item a:focus-visible {
+  text-decoration: underline;
+}
+
+.experience-item a:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
 @media (min-width: 30rem) {
   .site-title {
     font-size: var(--fs-xl);
@@ -253,10 +269,6 @@ main {
   text-decoration: underline;
   text-underline-offset: 0.2em;
   text-decoration-thickness: 0.1em;
-}
-
-.cv-main {
-  max-width: var(--content-max);
 }
 
 .cv-role {
