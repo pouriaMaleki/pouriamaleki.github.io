@@ -1,10 +1,8 @@
-export class SiteFooter extends HTMLElement {
-  connectedCallback() {
-    if (this.firstElementChild) {
-      return;
-    }
+import { BaseComponent } from "./base-component.js";
 
-    this.innerHTML = `
+export class SiteFooter extends BaseComponent {
+  render() {
+    return `
       <footer class="contact-footer" aria-labelledby="contact-title">
         <section class="contact-card">
           <h2 id="contact-title" class="section-title">Contact</h2>

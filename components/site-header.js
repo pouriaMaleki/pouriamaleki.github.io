@@ -1,3 +1,5 @@
+import { BaseComponent } from "./base-component.js";
+
 const NAV_ITEMS = [
   { id: "home", href: "index.html", label: "Home" },
   { id: "cv", href: "cv.html", label: "CV" },
@@ -5,19 +7,15 @@ const NAV_ITEMS = [
   { id: "blog", href: "blog.html", label: "Blog" },
 ];
 
-export class SiteHeader extends HTMLElement {
-  connectedCallback() {
-    if (this.firstElementChild) {
-      return;
-    }
-
+export class SiteHeader extends BaseComponent {
+  render() {
     const currentPage = this.getAttribute("current-page");
     const navItems = NAV_ITEMS.map((item) => {
       const currentAttr = item.id === currentPage ? ' aria-current="page"' : "";
       return `<li><a href="${item.href}" class="primary-nav-link"${currentAttr}>${item.label}</a></li>`;
     }).join("");
 
-    this.innerHTML = `
+    return `
       <header>
         <img src="profile.jpg" alt="Portrait of Pouria Abdolmaleki" class="profile-avatar" />
         <h1 class="site-title">Pouria Abdolmaleki</h1>
