@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="A selection of work and personal projects by Pouria Abdolmaleki, including Lernito, Arosis, an ESP32 bike computer, and more." />
+  <script type="module" src="components.js"></script>
+  <title>Portfolio | Pouria Abdolmaleki</title>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <site-header current-page="portfolio"></site-header>
+
+  <main id="main-content">
+    <section class="cv-section" aria-labelledby="portfolio-intro-title">
+      <h2 id="portfolio-intro-title" class="section-title">Portfolio</h2>
+      <p class="intro-text">A selection of things I've built or led — at work, at home, and in between.</p>
+    </section>
+
+    <section class="cv-section" aria-labelledby="portfolio-work-title">
+      <h2 id="portfolio-work-title" class="section-title">Work Projects</h2>
+
+      <article class="experience-item" aria-labelledby="proj-lernito-title">
+        <h3 id="proj-lernito-title">Lernito — E-Learning Platform</h3>
+        <p class="experience-meta">IIN Groups • 2015–2019</p>
+        <ul>
+          <li>Proposed, architected, and led development from zero to market leader in the Iranian e-learning space.</li>
+          <li>Reached 10% of the target market and became profitable within one year of public launch.</li>
+          <li>Built the engineering team from scratch: hiring pipeline, scrum process, technical culture, and onboarding.</li>
+          <li>Led performance and scaling work as concurrent user demand grew rapidly post-launch.</li>
+        </ul>
+        <ul class="chip-list" style="margin-top: var(--sp-3);" aria-label="Technologies used">
+          <li>JavaScript</li>
+          <li>Node.js</li>
+          <li>React</li>
+          <li>PostgreSQL</li>
+        </ul>
+      </article>
+
+      <article class="experience-item" aria-labelledby="proj-arosis-title">
+        <h3 id="proj-arosis-title">Arosis — Point of Sale System</h3>
+        <p class="experience-meta">Arosis (Co-founder) • 2017–2018</p>
+        <ul>
+          <li>Led technical direction for a POS startup, coordinating both software and hardware teams.</li>
+          <li>Delivered reporting performance more than 10× faster than the leading competitors at the time.</li>
+        </ul>
+        <ul class="chip-list" style="margin-top: var(--sp-3);" aria-label="Technologies used">
+          <li>JavaScript</li>
+          <li>Node.js</li>
+          <li>Electron</li>
+        </ul>
+      </article>
+
+      <article class="experience-item" aria-labelledby="proj-relex-perf-title">
+        <h3 id="proj-relex-perf-title">Frontend Performance & Architecture, RELEX</h3>
+        <p class="experience-meta">RELEX Solutions • 2019–Present</p>
+        <ul>
+          <li>Drove large-scale performance optimization and refactoring across a complex enterprise frontend.</li>
+          <li>Resolved deep customer-reported performance issues, directly linking technical fixes to business impact.</li>
+          <li>Led frontend architecture direction over several years, shaping long-term technical decisions through hands-on implementation.</li>
+          <li>Introduced and scaled AI-assisted engineering workflows that measurably improved team throughput.</li>
+        </ul>
+        <ul class="chip-list" style="margin-top: var(--sp-3);" aria-label="Technologies used">
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>GraphQL</li>
+          <li>Node.js</li>
+          <li>CI/CD</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="cv-section" aria-labelledby="portfolio-personal-title">
+      <h2 id="portfolio-personal-title" class="section-title">Personal Projects</h2>
+
+      <article class="experience-item" aria-labelledby="proj-bike-title">
+        <h3 id="proj-bike-title">ESP32 Bike Computer</h3>
+        <p class="experience-meta">2026 — <a href="https://map.fiksu.me">map.fiksu.me</a></p>
+        <ul>
+          <li>Building a Rust-based bike computer on ESP32 with maps and turn-by-turn navigation.</li>
+          <li>Companion web app for route planning, and native apps for iOS and Android in progress.</li>
+          <li>The firmware runs in-browser via a <a href="https://map.fiksu.me/emulator">WASM emulator</a> — no hardware required to try it.</li>
+        </ul>
+        <ul class="chip-list" style="margin-top: var(--sp-3);" aria-label="Technologies used">
+          <li>Rust</li>
+          <li>ESP32</li>
+          <li>WebAssembly</li>
+          <li>iOS</li>
+          <li>Android</li>
+        </ul>
+      </article>
+
+      <article class="experience-item" aria-labelledby="proj-homelab-title">
+        <h3 id="proj-homelab-title">Self-Hosted Infrastructure</h3>
+        <p class="experience-meta">2024 — Present</p>
+        <ul>
+          <li>Multi-node homelab running Immich, Authentik (SSO), Vaultwarden, Navidrome, and personal mail.</li>
+          <li>Implemented a zero-trust model: private by default, strong backups, and per-service hardening.</li>
+          <li>Managed with NixOS for reproducible, declarative configuration across nodes.</li>
+        </ul>
+        <ul class="chip-list" style="margin-top: var(--sp-3);" aria-label="Technologies used">
+          <li>NixOS</li>
+          <li>Kubernetes</li>
+          <li>Docker</li>
+          <li>Zero Trust</li>
+        </ul>
+      </article>
+
+      <article class="experience-item" aria-labelledby="proj-music-title">
+        <h3 id="proj-music-title">Music Streaming App</h3>
+        <p class="experience-meta">Wikitroop Solution Ltd • 2014</p>
+        <ul>
+          <li>Designed and optimized a Cordova-based music streaming app targeting low-end Android and iOS devices.</li>
+          <li>Reached 100K+ downloads within one month of launch and became top-trending in its category.</li>
+        </ul>
+        <ul class="chip-list" style="margin-top: var(--sp-3);" aria-label="Technologies used">
+          <li>JavaScript</li>
+          <li>Cordova</li>
+          <li>Android</li>
+          <li>iOS</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <site-footer></site-footer>
+</body>
+
+</html>
