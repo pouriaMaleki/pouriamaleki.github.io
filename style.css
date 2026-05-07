@@ -40,6 +40,14 @@
   --content-max: 740px;
   --radius-sm: 0.375rem;
   --surface-raised: #ffffff;
+
+  --font-mono: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+  --syn-comment: #6b7280;
+  --syn-keyword: #7c3aed;
+  --syn-name: #b45309;
+  --syn-tag: #0369a1;
+  --syn-attr: #15803d;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -51,6 +59,11 @@
     --surface: #1a1a1a;
     --surface-alt: #262626;
     --surface-raised: var(--surface-alt);
+
+    --syn-keyword: #a78bfa;
+    --syn-name: #fbbf24;
+    --syn-tag: #38bdf8;
+    --syn-attr: #4ade80;
   }
 }
 
@@ -526,3 +539,28 @@ main {
   color: var(--ink-subtle);
   margin: 0;
 }
+
+.post-code {
+  margin: 0 0 var(--sp-4);
+  padding: var(--sp-5);
+  background-color: var(--surface-raised);
+  border: 1px solid var(--surface-alt);
+  border-radius: var(--radius-sm);
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  line-height: var(--lh-base);
+  color: var(--ink-muted);
+}
+
+.post-code code {
+  font-family: inherit;
+  background: none;
+  padding: 0;
+}
+
+.syn-comment { color: var(--syn-comment); }
+.syn-keyword { color: var(--syn-keyword); }
+.syn-name    { color: var(--syn-name); }
+.syn-tag     { color: var(--syn-tag); }
+.syn-attr    { color: var(--syn-attr); }

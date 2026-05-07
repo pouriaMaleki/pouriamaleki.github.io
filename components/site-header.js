@@ -4,7 +4,7 @@ const NAV_ITEMS = [
   { id: "home", href: "index.html", label: "Home" },
   { id: "cv", href: "cv.html", label: "CV" },
   // { id: "portfolio", href: "portfolio.html", label: "Portfolio" },
-  // { id: "blog", href: "blog.html", label: "Blog" },
+  { id: "blog", href: "blog.html", label: "Blog" },
 ];
 
 export class SiteHeader extends BaseComponent {
