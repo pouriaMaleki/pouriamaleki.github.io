@@ -1,0 +1,71 @@
+@page {
+  margin: 14mm;
+}
+
+html,
+body {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+.skip-link,
+.profile-avatar,
+.primary-nav-list,
+.contact-footer,
+.screen-only {
+  display: none !important;
+}
+
+header,
+main {
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.site-title {
+  font-size: 1.6rem !important;
+  margin: 0 0 0.2rem !important;
+  padding-right: 0 !important;
+}
+
+.print-only {
+  display: block !important;
+}
+
+.print-contact {
+  margin: 0 0 1rem;
+  font-size: 0.92rem;
+  line-height: 1.45;
+  color: #111;
+}
+
+.print-contact p {
+  margin: 0.1rem 0;
+}
+
+.print-about {
+  margin-bottom: 1rem;
+}
+
+.print-about p {
+  margin: 0;
+  font-size: 0.93rem;
+  line-height: 1.48;
+  color: #111;
+}
+
+.cv-section {
+  margin-bottom: 1rem !important;
+}
+
+.experience-item {
+  margin-bottom: 0.9rem !important;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.experience-item a {
+  color: inherit !important;
+  text-decoration: none !important;
+}

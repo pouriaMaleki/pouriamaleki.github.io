@@ -9,7 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&display=swap" />
   <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="CV of Pouria Abdolmaleki – Lead Software Developer at RELEX Solutions. Skills, work experience, and hobby projects." />
+  <link rel="stylesheet" href="cv-print.css" media="print" />
+  <meta name="description"
+    content="CV of Pouria Abdolmaleki – Lead Software Developer at RELEX Solutions. Skills, work experience, and hobby projects." />
   <script type="module" src="components.js"></script>
   <title>CV | Pouria Abdolmaleki</title>
 </head>
@@ -21,6 +23,25 @@
 
   <main id="main-content">
     <article aria-labelledby="cv-page-title">
+      <section class="print-only" aria-label="Print contact summary" style="display:none">
+        <div class="print-contact">
+          <p>Helsinki, Finland</p>
+          <p>pouria@fiksu.me</p>
+          <p>Homepage: pouria.fiksu.me</p>
+          <p>linkedin.com/in/pamaleki</p>
+          <p>github.com/pouriaMaleki</p>
+        </div>
+      </section>
+
+      <section class="print-only print-about" aria-labelledby="cv-about-print-title" style="display:none">
+        <h2 id="cv-about-print-title" class="section-title">About</h2>
+        <p>Software engineer with more than 11 years of experience in software development, technical leadership, and
+          engineering management. Strong background in JavaScript, frontend architecture, and performance engineering,
+          combined with a practical interest in product design, team development, and software delivery process design.
+          Most interested in principal or engineering management roles where I can remain hands-on, guide architectural
+          direction, and help teams solve complex product and engineering challenges.</p>
+      </section>
+
       <section class="cv-section" aria-labelledby="cv-skills-title">
         <h2 id="cv-skills-title" class="section-title">Skills</h2>
 
